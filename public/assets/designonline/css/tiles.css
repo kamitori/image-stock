@@ -1,0 +1,142 @@
+/* Homepage Tiles
+----------------------------------------------- */
+
+/**
+ * Grid container
+ */
+#tiles {
+	list-style-type: none;
+	position: relative; /** Needed to ensure items are laid out relative to this container **/
+	margin: 0;
+}
+
+/**
+ * Grid items
+ */
+#tiles li {
+	/*width: 220px;*/
+	background-color: #ffffff;
+	border: 1px solid #dedede;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	display: none; /** Hide items initially to avoid a flicker effect **/
+  	cursor: pointer;
+	padding: 4px;
+}
+
+#tiles li img {
+	display: block;
+}
+
+/**
+ * Grid item text
+ */
+#tiles li p {
+	color: #666;
+	font-size: 12px;
+	margin: 7px 0 0 7px;
+}
+
+/** General page styling **/
+
+#main {
+	padding: 10px 0 30px 0;
+	min-height: 180px;
+	margin-bottom: 3px;
+}
+
+a#inifiniteLoader{    
+    display:none;  
+} 
+
+.view {
+    width: 220px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+}
+.view .mask, .view .content {
+    width: 220px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    display: block;
+    position: relative
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 10px 0 0 0
+}
+.view p {
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+
+.link-btn i{
+	border-radius: 30px;
+	background: rgba(0, 0, 0, 0.8);
+	font-size: 20px;
+	color: #e6e6e6;
+	padding: 11px 8px 8px;
+}
+
+.link-btn a:hover{
+	text-decoration: none;
+	font-color: #FFFFFF;
+}
+
+.view-first img { 
+    transition: all 0.2s linear;
+}
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(255,255,255, 0.7); 
+    transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first p { 
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+.view-first a.info{
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.view-first:hover img { 
+    transform: scale(1.1);
+} 
+.view-first:hover .mask { 
+    opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-first:hover p {
+    transition-delay: 0.1s;
+}

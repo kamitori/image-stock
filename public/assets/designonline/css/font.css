@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Avenir LT W01 85 Heavy";
+    src: url("/assets/fonts/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot");
+    src: local('Avenir LT W01 85 Heavy'),
+            url("/assets/fonts/7147ec3a-8ff8-4ec9-8c5c-bd1571dc6ae6.woff") format("woff"),
+            url("/assets/fonts/d1dc54b2-878d-4693-8d6e-b442e99fef68.ttf") format("truetype");            
+    *src: url("/assets/fonts/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot?iefix") format('eot');
+}

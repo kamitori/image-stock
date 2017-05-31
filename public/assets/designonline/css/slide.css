@@ -1,0 +1,90 @@
+.paletteContent .large-3{
+  margin-bottom: 25px;
+  float: left;
+}
+#paletteLabels .paletteLabel{
+  width: 35px;
+}
+#paletteContent .paletteContent{
+	/*left: 35px;*/
+	position:relative;
+	text-align:center;
+	padding-left: 13%;
+    padding-right: 10%;  
+}
+#paletteContentOptions{
+  padding-top: 10px;
+}
+#paletteContentOptions>div {
+  padding: 0 0px;
+}
+.step3-options ul li.col1 span b{
+  font-size: 9px;
+}
+#picturestrip{
+  margin-left: 32px;
+}
+#slider_image{
+  width:100%;
+  /*height:300px;*/
+  /*overflow:hidden;*/
+  /*position:relative;  */
+  float:left;
+}
+.image_content{
+  float:left;
+  margin-left:10px;
+  width:100px;
+  height:80px;
+  margin-bottom:25px;
+}
+.photo_privois{
+  display: block;
+  /*animation:round 16s infinite;  */
+  width: 40px;
+  max-height: 40px;
+  margin-top:30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.photo{
+  display: block;
+  /*animation:round 16s infinite;  */
+  margin-top:30px;
+  /*margin-bottom: 10px;*/
+  text-align: center;
+  width:100%;
+  height:100%;
+}
+.photo:hover,.columns img{
+  cursor: pointer;
+}
+@keyframes round{   
+  25%{opacity:1;}
+  40%{opacity:0;}
+} 
+
+#editAreaToolBar{
+  background: url("../images/dtool_header2.png") repeat-x;
+  background-color: transparent;
+}
+#editAreaToolBar .ds_tool_group{
+  margin-top: 8px;
+}
+.ui-slider-vertical .ui-slider-handle{
+    left: -0.8em;
+}
+.bundlename{
+  line-height: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+  .paletteContent .large-3{
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .paletteContent .large-3{
+    width: 25%;
+  }
+}
